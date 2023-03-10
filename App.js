@@ -18,9 +18,9 @@ const App = () => {
   return (
     <NavigationContainer>
       <RootStack.Navigator initialRouteName='splash'>
-        {/* <RootStack.Screen options={{headerShown: false}} name="splash" component={Splash}/>
+        <RootStack.Screen options={{headerShown: false}} name="splash" component={Splash}/>
         <RootStack.Screen options={{headerShown: false}} name="splashscnd" component={SplashSecond}/>
-        <RootStack.Screen options={{headerShown: false}} name="signin" component={Login}/> */}
+        <RootStack.Screen options={{headerShown: false}} name="signin" component={Login}/>
         <RootStack.Screen options={{headerShown: false}} name="register" component={Register}/>
       </RootStack.Navigator>
     </NavigationContainer>

@@ -91,7 +91,7 @@ const Login = ({ navigation }) => {
           {/* // signup */}
           <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: "center", marginTop: 30 }}>
             <Text>Don't Have an Account?</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("register")}>
               <Text style={{ color: "#2d75ff" }}> Sign Up</Text>
             </TouchableOpacity>
           </View>
