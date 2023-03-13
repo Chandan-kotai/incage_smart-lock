@@ -3,9 +3,8 @@ import React from 'react'
 import CustomButton from '../utils/CustomButton'
 
 const SplashSecond = ({ navigation }) => {
-    const hello = () => {
-        Alert.alert("hello");
-        // navigation.navigate("splash");
+    const register = () => {
+        navigation.navigate("register");
     }
 
     return (
@@ -27,7 +26,7 @@ const SplashSecond = ({ navigation }) => {
 
                 {/* //bottom part */}
                 <View style={splashsecond.bottom}>
-                    <CustomButton btnText="Create an Account" onPressFunc={hello} />
+                    <CustomButton btnText="Create an Account" onPressFunc={register} />
                     <TouchableOpacity onPress={()=> navigation.navigate('signin')}>
                         <Text style={{ textAlign: "center", fontSize: 14, marginTop: 10, color: "#fff" }}>Sign In</Text>
                     </TouchableOpacity>

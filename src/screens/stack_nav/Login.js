@@ -6,9 +6,8 @@ const Login = ({ navigation }) => {
   const [showPassword, setShowPassword] = useState(false)
   // console.log(showPassword)
 
-  const hello = () => {
-    Alert.alert("hello");
-    // navigation.navigate("splash");
+  const login = () => {
+    navigation.navigate("tabnav");
   }
 
   return (
@@ -18,7 +17,7 @@ const Login = ({ navigation }) => {
           {/* // head */}
           <View style={{ marginLeft: 10, marginTop: 10 }}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
-              <Image style={{ alignItems: "center" }} source={require('../../assets/icons/nav.png')} />
+              <Image style={{ alignItems: "center", width: 20, height: 20 }} source={require('../../assets/icons/nav.png')} />
             </TouchableOpacity>
           </View>
 
@@ -60,7 +59,7 @@ const Login = ({ navigation }) => {
 
           {/* // buttons */}
           <View style={{ marginTop: 30 }}>
-            <CustomButton btnText={"Login here"} onPressFunc={hello} />
+            <CustomButton btnText={"Login here"} onPressFunc={login} />
 
             {/* // forget password */}
             <TouchableOpacity>

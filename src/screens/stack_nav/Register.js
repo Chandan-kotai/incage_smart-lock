@@ -10,7 +10,7 @@ const Register = ({ navigation }) => {
           {/* // head */}
           <View style={{ marginLeft: 10, marginTop: 10 }}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
-              <Image style={{ alignItems: "center" }} source={require('../../assets/icons/nav.png')} />
+              <Image style={{ alignItems: "center", width: 20, height: 20 }} source={require('../../assets/icons/nav.png')} />
             </TouchableOpacity>
           </View>
 
@@ -69,7 +69,7 @@ const Register = ({ navigation }) => {
           {/* // signin */}
           <View style={{ flexDirection: "row", alignItems: 'center', justifyContent: "center", marginTop: 30 }}>
             <Text>Don't Have an Account?</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("signin")}>
               <Text style={{ color: "#2d75ff" }}> Sign In</Text>
             </TouchableOpacity>
           </View>
@@ -102,7 +102,6 @@ const styles = StyleSheet.create({
   },
   inputBox: {
     paddingLeft: 10,
-    marginRight: 45,
     paddingVertical: 5,
     borderWidth: 1,
     borderRadius: 8,
