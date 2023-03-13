@@ -46,11 +46,12 @@ const TabNavigation = () => {
                     }
                 },
                 tabBarStyle: {
-                    height: 60,
+                    height: 70,
                     paddingTop: 10,
-                    paddingBottom: 5,
+                    paddingBottom: 10,
                 },
                 tabBarIconStyle: {
+                    // paddingBottom: 5,
                 }
             })}
         >

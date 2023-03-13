@@ -1,14 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
 
 const MyDevice = () => {
-  return (
-    <View>
-      <Text>MyDevice</Text>
-    </View>
-  )
+    return (
+        <SafeAreaView style={styles.parent}>
+            <Text style={styles.text}>MyDevice</Text>
+            <Text style={styles.text}>Work in progress....</Text>
+            <Text style={styles.text}>Thank You</Text>
+        </SafeAreaView>
+    )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    parent: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    text:{
+        fontSize: 26,
+        color: "#2D75FF"
+    }
+})
 
 export default MyDevice;
