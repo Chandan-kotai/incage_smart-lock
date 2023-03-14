@@ -5,6 +5,7 @@ import IonIcons from 'react-native-vector-icons/Ionicons'
 import ConnectToWifi from './ConnectToWifi'
 import TrackOrder from './TrackOrder'
 import MyDevice from './MyDevice'
+import OrderList from './OrderList'
 
 const Tab = createBottomTabNavigator()
 
@@ -38,17 +39,18 @@ const TabNavigation = () => {
                     } else if (rn === 'TrackOrder') {
                         return focused ?
                             <Text style={{ color: "#2D75FF", fontSize: 15, }}>{rn}</Text>
-                            : <Text style={{ color: "#808080", fontSize: 15, }}>{rn}</Text>;
+                            : <Text style={{ color: "#000", fontSize: 15, }}>{rn}</Text>;
                     } else if (rn === 'MyDevice') {
                         return focused ?
                             <Text style={{ color: "#2D75FF", fontSize: 15, }}>{rn}</Text>
-                            : <Text style={{ color: "#808080", fontSize: 15, }}>{rn}</Text>;
+                            : <Text style={{ color: "#000", fontSize: 15, }}>{rn}</Text>;
                     }
                 },
                 tabBarStyle: {
                     height: 70,
                     paddingTop: 10,
                     paddingBottom: 10,
+                    backgroundColor: "#E2ECFF"
                 },
                 tabBarIconStyle: {
                     // paddingBottom: 5,
@@ -56,7 +58,7 @@ const TabNavigation = () => {
             })}
         >
             <Tab.Screen options={{ headerShown: false }} name='Home' component={ConnectToWifi} />
-            <Tab.Screen options={{ headerShown: false }} name='TrackOrder' component={TrackOrder} />
+            <Tab.Screen options={{ headerShown: false }} name='TrackOrder' component={OrderList} />
             <Tab.Screen options={{ headerShown: false }} name='MyDevice' component={MyDevice} />
         </Tab.Navigator>
     )

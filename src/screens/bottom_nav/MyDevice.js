@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
     parent: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "center"
     },
     text:{
-        fontSize: 26,
-        color: "#2D75FF"
+        color:"#033EAE",
+        fontSize: 30,
     }
 })
 
